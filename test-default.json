@@ -1,0 +1,22 @@
+{
+  "extends": [
+    ":autodetectPinVersions",
+    ":combinePatchMinorReleases",
+    ":dependencyDashboard",
+    ":ignoreUnstable",
+    ":prConcurrentLimitNone",
+    ":prHourlyLimitNone",
+    ":prImmediately",
+    ":semanticPrefixFixDepsChoreOthers",
+    ":separateMultipleMajorReleases",
+    ":updateNotScheduled",
+    "group:recommended"
+  ],
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ]
+}
+
